@@ -1,0 +1,101 @@
+
+    Git is version control system
+    Git helps to keep track of code changes
+    Git is used to collaborate on code (Multiple people can use a same code using git)
+    
+    U -> Untracked
+    A -> Added
+    M -> Modified
+
+    
+    in cmd
+    -> git config --global user.name "username"
+    -> git config --global user.email "email"
+
+    -> git clone (link of repository)
+
+    
+    -> git status
+
+    ! add to stageagrea -> add to git folder -> add to github
+
+    1.to add file into staging area 
+    -> git add text2.txt
+    U change to A 
+    
+
+    2. to add file into git folder
+    -> git commit -m "some messages"
+    after this there is no symbol in rightside of file
+
+    3. to move file from git folder to github
+    -> git push origin(it represents the repo link) main
+
+
+    create test3 file and try to pushed
+    in test3 while input some text its truns in to M 
+
+
+    to get changes from git to local folder
+    -> git pull
+
+    to add a new repo from local system create folder and use below commands
+    -> git init 
+
+    to add multiple files in the folder at same time
+    -> git add .
+
+    to push the new repo
+    first create repo in github web
+    then to connect to those
+    -> git remote add origin "new repo link"
+
+    to check name of brach (main/master)
+    -> git branch
+
+    {
+        we can push by using branch name eg: if branch name is master
+        -> git push origin master
+    }
+    or
+    {
+        we can change the branch name to main
+        -> git branch -M main
+
+        now branch name change to main now we can try
+        -> git push origin main
+    }
+
+
+    to check branches in main
+    -> git branch -a
+
+    create branch in github web
+    to move to another branch
+    -> git checkout brachname
+
+    to push changes to branch
+    -> git push origin branchname
+
+    to check diff between present to another branch
+    -> git diff branchname
+
+    to link the subbranch to main (go to main first)
+    -> git merge branchname (after this need to push commang to get changes in web)
+
+    to create new branch from ide
+    -> git branch branchname
+
+    if we wont own the main than we can raise pullrequest to main from github web
+
+    Git Conflicts
+    -------------
+
+    if two branches changes same line in main that arises Conflicts we need to resolve first before commit changes
+
+    to get changes of main to branch
+    go to respective branch
+    -> git pull origin main
+
+
+
